@@ -24,6 +24,7 @@ class Api::V1::ProductsController < ApplicationController
       render json:product, status:200
     else
       render json:{error: "Product Not Found."}
+    end
   end
 
   private
